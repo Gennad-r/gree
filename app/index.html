@@ -21,176 +21,80 @@
 	small{
 		font-weight: 200;
 	}
-		.ovh{
-			overflow: hidden;
-		}
-		.relative{
-			position: relative;
-		}
-		.first-block{
-			position: relative;	
-			padding-top: 30px;	
-		}
-		
-		.blue-bold-1_3, .white-bold-1_3, .dark-blue-bold-1_3{
-			color: #59bded;	
-			text-align: center;	
-			font-size: 30px;	
-			font-weight: 700;	
-			line-height: 1.2;	
-		}
-		.white-bold-1_3{
-			color: #fff;
-			text-align: left;	
-		}
-		.dark-blue-bold-1_3{
-			color: #324e5c;
-			text-align: left;
-		}
-		.text-holder{
-			position: absolute;	
-			z-index: 99;	
-			left: 30%;
-			bottom: 10%;
-			padding: 20px;	
-			width: 100%;	
-			background-color: rgba(88, 190, 237, 0.9);
-			text-align: left;
-		}
-		.second-block{
-			margin: 30px 0 0;	
-		}
-		.third-block, .fourth-block{
-			position: relative;	
-		}
-		.left-side .text-holder{
-			left: auto;
-			right: 40%;
-				
-		}
-		.left-side .white-bold-1_3{text-align: right;}
-	.freez{
-		-webkit-transform: rotate(-90deg);
-		-ms-transform: rotate(-90deg);
-		-o-transform: rotate(-90deg);
-		transform: rotate(-90deg);
-		display: inline-block;
-		position: absolute;
-		top: 50%;
-		font-size: 60px;
-
+	.posr{
+		position: relative;
 	}
-	.square{
+	.adw-block{
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 60px;
+	}
+
+	.text-holder{
+		background: rgba(42, 155, 214, 0.9);
 		position: absolute;
-		background-color: rgba(88, 190, 237, 0.9);
-		width: 300px;
-		height: 300px;
-		display: block;
-		padding-top: 60px;
-		text-align: center;
-		font-weight: 200;
-		font-size: 80px;
-		border-radius: 50%;
 		z-index: 99;
-		left: 250px;
-		bottom: 0%;
+		width: 40%;
+		left: 0;
+		bottom: 20px;
+		padding: 20px;
+		text-align: right;
+		display: table;
 	}
-	
+	.vac{
+		display: table-cell;
+		vertical-align: middle;
+		font-size: 30px;
+		line-height: 1.2;
+		font-weight: bold;
+		color: #fff;
+	}
 
-	.second-block .white-bold-1_3 span{
-		font-size: 120px;
-	}
-	.f100perc{
-		background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.68 55.2"><title>Daikin</title><polygon points="0 55.2 0 0 61.68 0 0 55.2" fill="%2359bded"/><polygon points="0 15.72 0 0 17.57 0 0 15.72" fill="%23324e5c"/></svg>');
+	.triangle-bg{
+		background: none;
+		background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.68 55.2"><title>Daikin</title><polygon points="0 55.2 0 0 61.68 0 0 55.2" fill="rgba(42, 155, 214, 0.9)"/><polygon points="0 15.72 0 0 17.57 0 0 15.72" fill="%23324e5c"/></svg>');
 		background-repeat: no-repeat;
 		padding: 20px 0 0 20px;
 		text-align: left;
-		margin-top: 50%;
-		margin-left: -100px;
-		font-size: 60px;
 
 	}
-	.f100perc small{
-		font-size: 30px;
-		line-height: 30px;
+
+	.adw-block .triangle-bg{
+		position: absolute;
+		left: 40%;
+		bottom: auto;
+		top: 35%;
+		padding: 50px 0 30px 50px;
 	}
-	
-	.third-block, .fourth-block, .second-block, .first-block, .f-01-block{
-		margin: 60px 0 0;
+	.adw-block .triangle-bg span{
+		color: #333;
+		font-size: 75px;
+		text-align: right;
+	}
+	.adw-block .triangle-bg strong {
+		color: #324E5C;
 	}
 
-
-
-
-	.fifth-block .white-bold-1_3{
-		background-color: rgba(88, 190, 237, 1);
-		margin-bottom: 30px;
-		padding: 20px;
+	.text03{
+		position: absolute;
+		z-index: 99;
+		font-weight: bold;
+		color: #fff;
+		width: 100%;
+		text-align: center;
+		font-size: 2.8vw;
+		bottom: 18%;
 	}
-	.fifth-block .white-bold-1_3:first-child{
-		margin-top: 30%;
-	}
-	.fifth-block .white-bold-1_3:nth-child(2){
-		background-color: #777;
-	}
+
 
 
 
 
 		/* media */
 @media (max-width: 992px) {
-	.freez, .square{
-		display: block;
-		position: static;
-		transform: none;
-		font-size: 30px;
-		text-align: center;
-	}
-	.fifth-block .white-bold-1_3:first-child{
-		margin-top: 30px;
-	}
-	.fifth-block .white-bold-1_3{
-		margin-bottom: 15px;
-		text-align: center;
-	}
-	.f100perc{
-		margin: 0px;
-		margin-bottom: 30px;
-	}
-	.second-block .white-bold-1_3{
-		margin: 0 auto;
-	}
-	.text-holder{
-		position: static;
-		margin-bottom: 20px;	
-	}
-	
-	.third-block img{
-		margin: 30px auto;
-	}
-	.third-block .square{
-		width: 200px;
-		height: 200px;
-		margin: 30px auto;
-		text-align: center;
-		font-size: 50px;
-	}
-	.reverse{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		-webkit-flex-direction: column-reverse;
-		-moz-flex-direction: column-reverse;
-		-ms-flex-direction: column-reverse;
-		-o-flex-direction: column-reverse;
-		flex-direction: column-reverse;
 
-	}
-	.m15{
-		padding: 0 15px;
-	}
+
+
 }
 
 
@@ -208,59 +112,36 @@
 	</div>
 </div>
 
-<div class="first-block ovh left-side">
+
+<div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-4 text-holder wow flipInX"><div class="white-bold-1_3">ПОДОЙДЕТ ДЛЯ<br>ЛЮБОГО ИНТЕРЬЕРА</div></div>
-			<div class="col-md-8 col-md-offset-4"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/001.jpg" alt="" class="img-responsive"></div>
+			<div class="text-holder wow flipInX"><span class="vac">DAIKIN Stylish<br>Новое измерение стиля</span></div>
+			<div class="col-md-11 col-md-offset-1"><img src="img/001_.jpg" alt="" class="img-responsive"></div>
 		</div>
 	</div>
 </div>
 
-
-
-<div class="second-block ovh">
-	<div class="container">
-		<div class="row reverse">
-			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/002.jpg" alt="" class="img-responsive"></div>
-			<div class="col-md-5"><div class="f100perc dark-blue-bold-1_3 wow flipInY"><small>ВЫСОКАЯ СТЕПЕНЬ</small><br>ЗАЩИТЫ</div></div>
-		</div>
-	</div>
-</div>
-
-
-<div class="third-block ovh">
-	<div class="container">
-		<div class="row relative ovh">
-			<div class="dark-blue-bold-1_3 freez"><div class="wow fadeInDown" data-wow-delay="0.5s">ОХЛАЖДЕНИЕ</div></div>
-			<div class="white-bold-1_3 square wow rotateIn">25-500<br>М<sup>2</sup></div>
-			<div class="col-md-8 col-md-offset-4"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/003.jpg" alt="" class="img-responsive"></div>
-		</div>
-	</div>
-</div>
-
-
-<div class="f-01-block ovh relative ">
-	<div class="text-holder wow fadeInUp"><div class="white-bold-1_3">УПРАВЛЕНИЕ<br><small>С НАСТЕННОГО ПУЛЬТА</small></div></div>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/004.jpg" alt="" class="img-responsive"></div>
-		</div>
-	</div>
-</div>
-
-<div class="fifth-block ovh left-side">
+<div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-4">
-				<div class="white-bold-1_3 wow fadeInLeft">ОХЛАЖДЕНИЕ</div>
-				<div data-wow-delay="0.5s" class="white-bold-1_3 wow fadeInLeft">ОБОГРЕВ</div>
-				<div data-wow-delay="1s" class="white-bold-1_3 wow fadeInLeft">ВЕНТИЛЯЦИЯ</div>
-			</div>
-			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/005.jpg" alt="" class="img-responsive"></div>
+			<div class="text-holder triangle-bg wow flipInX"><span class="vac">Изысканный<br><strong>ДИЗАЙН</strong></span></div>
+			<div class="col-md-5"><img src="img/002_.jpg" alt="" class="img-responsive"></div>
 		</div>
 	</div>
 </div>
+
+<div class="adw-block">
+	<div class="text03"><span>ВЫБОР ЦВЕТА<br>для любого интерьера</span></div>
+	<div class="container">
+		<div class="row posr">
+			<div class="col-md-12"><img src="img/003_.jpg" alt="" class="img-responsive"></div>
+		</div>
+	</div>
+</div>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
