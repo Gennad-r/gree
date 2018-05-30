@@ -2,6 +2,7 @@
 /dist/
 /.git/
 /app/css/
+/app/img/
 /**/*.psd
 /**/Thumbs.db
 /**/*.DS_Store

@@ -21,79 +21,93 @@
 	small{
 		font-weight: 200;
 	}
-	.posr{
-		position: relative;
-	}
-	.adw-block{
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 60px;
-	}
-
-	.text-holder{
-		background: rgba(42, 155, 214, 0.9);
-		position: absolute;
-		z-index: 99;
-		width: 40%;
-		left: 0;
-		bottom: 20px;
-		padding: 20px;
-		text-align: right;
-		display: table;
-	}
-	.vac{
-		display: table-cell;
-		vertical-align: middle;
-		font-size: 30px;
-		line-height: 1.2;
-		font-weight: bold;
-		color: #fff;
-	}
-
-	.triangle-bg{
-		background: none;
-		background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.68 55.2"><title>Daikin</title><polygon points="0 55.2 0 0 61.68 0 0 55.2" fill="rgba(42, 155, 214, 0.9)"/><polygon points="0 15.72 0 0 17.57 0 0 15.72" fill="%23324e5c"/></svg>');
+	.center{
+	text-align: center;
+}
+.adw-block{
+	margin-top: 30px;
+}
+	.triangle{
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-left: 30px;
 		background-repeat: no-repeat;
-		padding: 20px 0 0 20px;
-		text-align: left;
-
+		background-image: url('data:image/svg+xml;utf8,<svg width="179" height="179" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 179V0H179L0 179Z" fill="%232A9BD6" fill-opacity="0.9"/><path d="M0 51.1429V0H51.1429L0 51.1429Z" fill="%23324E5C"/></svg>');
 	}
-
-	.adw-block .triangle-bg{
-		position: absolute;
-		left: 40%;
-		bottom: auto;
-		top: 35%;
-		padding: 50px 0 30px 50px;
+	.triangle .tr{
+		font-size: 50px;
 	}
-	.adw-block .triangle-bg span{
-		color: #333;
-		font-size: 75px;
+	.triangle .tr span {
+		font-size: 40px;
+		display: inline-block;
+	}
+	.triangle .txt {
+		font-size: 18px;
+	}
+	.col-md-5.col-md-push-7.wow .txt strong{
+		color: #2A9BD6;
+		display: inline-block;
+	}
+	.left{
+		position: relative;
+		z-index: 10;
 		text-align: right;
+		padding: 15px 20px 15px 0;
 	}
-	.adw-block .triangle-bg strong {
-		color: #324E5C;
+	.right{
+		position: relative;
+		padding: 15px 0 15px 20px;
+		text-align: left;
 	}
-
-	.text03{
+	.right.blue:before{
+		right: auto;
+		left: 0;
+	}
+	.blue:before{
+		background-color: #2A9BD6;
+		content: "";
 		position: absolute;
-		z-index: 99;
-		font-weight: bold;
-		color: #fff;
-		width: 100%;
-		text-align: center;
-		font-size: 2.8vw;
-		bottom: 18%;
+		display: block;
+		width: 100vw;
+		right: 0;
+		top: 0;
+		height: 100%;
+		z-index: 0;
 	}
-
-
-
-
+	
+	.white{
+		color: #fff;
+		position: relative;
+	}
+	.txt{
+		font-size: 30px;
+		z-index: 99;
+	}
+	.mb-40{margin-bottom: -40px;}
+	.trr{
+		transform: translateX(-30%); 
+		z-index: 99; 
+		margin-top: 100px;
+	}
+	.adw-block{overflow: hidden;}
 
 		/* media */
 @media (max-width: 992px) {
-
-
+	.triangle .tr{
+		font-size: 40px;
+		}
+	.triangle .tr span {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.mb-40{display: none;}
+	.txt{
+		font-size: 20px;
+	}
+	.trr{
+		transform: none; 
+		margin-top: 0;
+	}
 
 }
 
@@ -116,31 +130,66 @@
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="text-holder wow flipInX"><span class="vac">DAIKIN Stylish<br>Новое измерение стиля</span></div>
-			<div class="col-md-11 col-md-offset-1"><img src="img/001_.jpg" alt="" class="img-responsive"></div>
+			<div class="col-md-5 col-md-push-7 wow triangle bounceInRight">
+				<div class="tr">УДОБНЫЙ <span>И ПРОСТОЙ В ЭКСПЛУАТАЦИИ</span></div>
+				<div class="txt"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева Автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+			</div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(1).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-12 mb-40"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(2).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-10 wow bounceInLeft">
+				<div class="txt blue left"><div class="white">НЕ ТРЕБУЕТ СПЕЦИАЛЬНОГО ДРЕНАЖНОГО ПОДДОНА</div></div>
+			</div>
 		</div>
 	</div>
 </div>
+
 
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="text-holder triangle-bg wow flipInX"><span class="vac">Изысканный<br><strong>ДИЗАЙН</strong></span></div>
-			<div class="col-md-5"><img src="img/002_.jpg" alt="" class="img-responsive"></div>
+			<div class="col-md-5 col-md-push-7 wow bounceInRight" style="z-index: 99;">
+				<div class="txt blue right trr"><div class="white txt">ПРОСТОТА В УСТАНОВКЕ</div></div>
+			</div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(3).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
 		</div>
 	</div>
 </div>
+
 
 <div class="adw-block">
-	<div class="text03"><span>ВЫБОР ЦВЕТА<br>для любого интерьера</span></div>
 	<div class="container">
-		<div class="row posr">
-			<div class="col-md-12"><img src="img/003_.jpg" alt="" class="img-responsive"></div>
+		<div class="row ">
+			<div class="col-md-5 wow bounceInLeft">
+				<div style="margin-bottom: 30px;">
+					<div class="txt blue left"><div class="white">НАПОЛЬНЫЙ</div></div>
+				</div>
+				<img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(4).jpg" alt="" class="img-responsive">
+			</div>
+			<div class="col-md-2 wow bounceInUp"><div class="txt center">ИЛИ</div></div>
+			<div class="col-md-5 wow bounceInRight">
+				<div style="margin-bottom: 30px;">
+					<div class="txt blue right"><div class="white">ПОТОЛОЧНЫЙ</div></div>
+				</div>
+				<img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(5).jpg" alt="" class="img-responsive">
+			</div>
 		</div>
 	</div>
 </div>
 
 
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-5 wow triangle bounceInUp">
+				<div class="tr">ИНТУИТИВНОЕ <span>УПРАВЛЕНИЕ</span></div>
+				<div class="txt"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева Автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+			</div>
+			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(6).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
+		</div>
+	</div>
+</div>
 
 
 
