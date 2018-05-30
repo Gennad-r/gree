@@ -44,9 +44,9 @@
 	.triangle .txt {
 		font-size: 18px;
 	}
-	.col-md-5.col-md-push-7.wow .txt strong{
+	.txt strong{
 		color: #2A9BD6;
-		display: inline-block;
+		display: block;
 	}
 	.left{
 		position: relative;
@@ -89,13 +89,74 @@
 		z-index: 99; 
 		margin-top: 100px;
 	}
-	.adw-block{overflow: hidden;}
+	.adw-block{
+		overflow: hidden;
+		position: relative;
+	}
+
+	.sm18{
+		font-size: 18px;
+	}
+
+	.cold{
+		background: linear-gradient(90deg, #281F54 0%, #C9E6EE 100%), linear-gradient(180deg, #281F54 0%, #A2E2EC 51.38%, #281F54 100%);
+		background-blend-mode: darken, normal;
+		width: 50%;
+		padding: 30px 0;
+		float: left;
+
+	}
+	.warm{
+		background: linear-gradient(270deg, #A8192D 0%, #F27E43 100%), linear-gradient(180deg, #952533 0%, #F58845 51.38%, #952533 100%);
+		background-blend-mode: darken, normal;
+		float: left;
+		padding: 30px 0;
+		width: 50%;
+	}
+	.temp{
+		font-size: 50px;
+		color: #fff;
+		text-align: center;
+	}
+	.cir{
+		position: absolute;
+		z-index: 99;
+		width: 340px;
+		height: 340px;
+		color: #fff;
+		font-size: 35px;
+		text-align: center;
+		padding-top: 90px;
+		background: radial-gradient(130px at 50% 50%, #289BE1 0%, #289BE1 70%, rgba(40, 155, 225, 0.8) 100%);
+		border-radius: 50%;
+		left: 50%;
+		transform: translate(-50%, -27%);
+	}
+	.temp-block{
+		overflow: visible;
+		margin-top: 200px;
+		margin-bottom: 200px;
+	}	
+	.wild-image{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+
+	}
+	.no-mt{
+		margin-top: 0;
+	}
+
+
 
 		/* media */
 @media (max-width: 992px) {
 	.triangle .tr{
 		font-size: 40px;
 		}
+	.triangle .txt{
+		font-size: 16px;
+	}
 	.triangle .tr span {
 		font-size: 30px;
 		margin-bottom: 20px;
@@ -108,7 +169,31 @@
 		transform: none; 
 		margin-top: 0;
 	}
-
+	.sm18{
+		font-size: 16px;
+	}
+	.img-responsive{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	.cir{
+		position: static;
+		transform: none;
+		border-radius: 0;
+		width: 100%;
+		font-size: 30px;
+		padding: 15px 0;
+		height: auto;
+	}
+	.temp-block{
+		margin: 0;
+	}
+	.triangle{
+		z-index: 99;
+	}
+	.wild-image{
+		position: static;
+	}
 }
 
 
@@ -127,19 +212,25 @@
 </div>
 
 
+
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-5 col-md-push-7 wow triangle bounceInRight">
-				<div class="tr">УДОБНЫЙ <span>И ПРОСТОЙ В ЭКСПЛУАТАЦИИ</span></div>
-				<div class="txt"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева Автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+			<div class="col-md-5 wow triangle no-mt bounceInLeft">
+				<div class="tr">ПЛЮСЫ <span>КОМПАКТНОСТЬ<br>НАДЕЖНОСТЬ</span></div>
+				<div class="txt"><strong>Автоматическое переключение</strong> охлаждения/нагрева автоматического режима охлаждения/нагрева для заданной температуры (только в с тепловым насосом).</div>
 			</div>
-			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(1).jpg" alt="" class="img-responsive wow fadeIn"></div>
-			<div class="col-md-12 mb-40"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(2).jpg" alt="" class="img-responsive wow fadeIn"></div>
-			<div class="col-md-10 wow bounceInLeft">
-				<div class="txt blue left"><div class="white">НЕ ТРЕБУЕТ СПЕЦИАЛЬНОГО ДРЕНАЖНОГО ПОДДОНА</div></div>
-			</div>
+			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/ewad100e-sl/001_ewad100e-sl_.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
 		</div>
+	</div>
+</div>
+
+<div class="adw-block temp-block">
+	<div class="container-fluid">
+		<div class="cir"><div class="wow rotateIn">РАБОЧИЙ<br>ТЕМПЕРАТУРНЫЙ<br>ДИАПАЗОН</div></div>
+		<div class="cold temp">-18</div>
+		<div class="warm temp">+48</div>
 	</div>
 </div>
 
@@ -148,48 +239,57 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-5 col-md-push-7 wow bounceInRight" style="z-index: 99;">
-				<div class="txt blue right trr"><div class="white txt">ПРОСТОТА В УСТАНОВКЕ</div></div>
+				<div>
+					<div class="txt blue right trr"><div class="white txt">ПРОСТОТА МОНТАЖА И ПУСКОНАЛАДКИ</div></div>
+				</div>
+				<div class="txt sm18 trr" style="margin-top: 18px; margin-left: 20px;"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
 			</div>
-			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(3).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ewad100e-sl/002_ewad100e-sl_.jpg" alt="" class="img-responsive wow fadeIn"></div>
 			
 		</div>
 	</div>
+</div>
+
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-push-2 col-md-5 wow triangle bounceInLeft">
+				<div class="tr">НИЗКИЙ<br><span>ПУСКОВОЙ<br>ТОК</span></div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<div class="wild-image"><img src="https://daikin-dealer.ru/image/catalog/ewad100e-sl/003_ewad100e-sl_.jpg" alt="" class="img-responsive wow rubberBand"></div>
 </div>
 
 
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-5 wow bounceInLeft">
-				<div style="margin-bottom: 30px;">
-					<div class="txt blue left"><div class="white">НАПОЛЬНЫЙ</div></div>
+			<div class="col-md-5 col-md-push-7 wow bounceInRight" style="z-index: 99;">
+				<div>
+					<div class="txt blue right trr"><div class="white txt">НИЗКИЙ УРОВЕНЬ ШУМА</div></div>
 				</div>
-				<img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(4).jpg" alt="" class="img-responsive">
+				<div class="txt sm18" style="margin-top: 18px; margin-left: 20px;"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
 			</div>
-			<div class="col-md-2 wow bounceInUp"><div class="txt center">ИЛИ</div></div>
-			<div class="col-md-5 wow bounceInRight">
-				<div style="margin-bottom: 30px;">
-					<div class="txt blue right"><div class="white">ПОТОЛОЧНЫЙ</div></div>
-				</div>
-				<img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(5).jpg" alt="" class="img-responsive">
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="adw-block">
-	<div class="container">
-		<div class="row ">
-			<div class="col-md-5 wow triangle bounceInUp">
-				<div class="tr">ИНТУИТИВНОЕ <span>УПРАВЛЕНИЕ</span></div>
-				<div class="txt"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева Автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
-			</div>
-			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/fwl01dfn/fwl01dfn(6).jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ewad100e-sl/004_ewad100e-sl_.jpg" alt="" class="img-responsive wow fadeIn"></div>
 			
 		</div>
 	</div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
