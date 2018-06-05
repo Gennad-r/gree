@@ -87,7 +87,6 @@
 		transform: translateX(-30%); 
 		z-index: 99; 
 		margin-top: 100px;
-		margin: 0;
 	}
 	.trl{
 		transform: translateX(30%); 
@@ -98,6 +97,7 @@
 		left: 0; 
 		top: 0;
 		width: 100%;
+		margin-top: 0;
 
 	}
 
@@ -106,9 +106,18 @@
 		right: 0;
 		bottom: 0;
 		width: 100%;
+		margin-top: 0;
 
 	}
-
+	.col-md-12 .trr.s01{
+		margin-top: 15px;
+	}
+	.col-md-12 .trr.s02{
+		margin-top: 150px;
+	}
+	.col-md-12 .trl.s03{
+		margin-bottom: 15px;
+	}
 
 	.adw-block{overflow: hidden;}
 
@@ -154,6 +163,17 @@
 	.own-bg-item{
 		position: absolute;
 	}
+	.abs-img-block{
+		position: relative;
+		padding: 130px 0;
+		margin-bottom: 90px;
+	}
+	.abs-img{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
 	
 
 		/* media */
@@ -177,6 +197,16 @@
 		position: relative;
 		margin: 0;
 		margin-bottom: 10px;
+	}
+	.abs-img-block{
+		position: relative;
+		padding: 0;
+		margin-bottom: 0px;
+	}
+	.abs-img{
+		position: static;
+		right: 0;
+		top: 0;
 	}
 
 }
@@ -221,27 +251,21 @@
 		</div>
 	</div>
 </div>
+	
 
-<div class="adw-block">
+
+
+
+<div class="adw-block abs-img-block">
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-4 wow bounceIn"><div class="txt left mtop">НОВАЯ ТЕХНОЛОГИЯ<br>УВЛАЖНЕНИЯ БЕЗ<br>ПОДАЧИ ВОДЫ</div></div>
-			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/ftxz25n/003_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive"></div>
 		</div>
+		<div class="abs-img"><img src="https://daikin-dealer.ru/image/catalog/ftxz25n/003_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive"></div>
 	</div>
 </div>
 
-<style>
-	.s01{
-		margin-top: 15px;
-	}
-	.s02{
-		margin-top: 150px;
-	}
-	.s03{
-		margin-bottom: 15px;
-	}
-</style>
+
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
