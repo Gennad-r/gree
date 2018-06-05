@@ -121,11 +121,18 @@
  	padding: 15px 0;
  }	
 
-	.right{
+	.txt-right{
 		text-align: right;
 	}
 	.blue-txt{
 		color: #2A9BD6;
+	}
+	
+	.down{
+		position: absolute;
+		top: 30%;
+		z-index: 99;
+		width: 100%;
 	}
 
 	.adw-block{overflow: hidden;}
@@ -134,9 +141,13 @@
 @media (max-width: 992px) {
 .strikes{
  	position: static;
- 	font-size: 20px;
+ 	font-size: 15px;
  	margin-bottom: 15px;
  }
+
+ .rel .down .txt{
+		font-size: 15px;	
+	}
 	.triangle .tr{
 		font-size: 40px;
 		}
@@ -149,8 +160,11 @@
 		font-size: 20px;
 		text-align: center;
 	}
-		.right{
+	.txt-right{
 		text-align: center;
+	}
+	.down .right{
+		padding-top: 0;
 	}
 
 	.trr, .trl{
@@ -178,14 +192,15 @@
 
 
 
-<div class="adw-block">
+<div class="adw-block rel">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-4 wow bounceInLeft" style="z-index: 99;">
-				<div class="txt blue left trl "><div class="white txt">DAIKIN STYLISH<br>Новое измерение стиля</div></div>
+			<div class="strikes">
+				<div class="s-blue wow bounceInUp">ДИЗАЙН<br>Изящный и утонченный</div>
 			</div>
-			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/001_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn"></div>
-			
+			<div class="col-md-12">
+				<img src="https://daikin-dealer.ru/image/catalog/ftxm20m_rxm20m/001_ftxm20m_rxm20m_.jpg" alt="" class="img-responsive wow fadeIn">
+			</div>
 		</div>
 	</div>
 </div>
@@ -195,48 +210,50 @@
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-5 col-md-push-7 wow triangle bounceInRight">
-				<div class="tr"><span>ИЗЫСКАННЫЙ</span> ДИЗАЙН</div>
+				<div class="tr"><span>Неслышная работа<br>блока 19 db(a)</span><br><strong style="color: #324E5C">ТИХО</strong></div>
 				
 			</div>
-			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/002_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ftxm20m_rxm20m/002_ftxm20m_rxm20m_.jpg" alt="" class="img-responsive wow fadeIn"></div>
 		</div>
 	</div>
 </div>
-
 
 <div class="adw-block rel">
 	<div class="container">
 		<div class="row ">
 			<div class="strikes">
-				<div class="gray wow bounceInDown">ВЫБОР ЦВЕТА</div>
-				<div class="s-blue wow bounceInUp">ДЛЯ ЛЮБОГО ИНТЕРЬЕРА</div>
+				<div class="s-blue wow bounceInDown">ЧИСТО<br>Совершенная система очистки воздуха</div>
 			</div>
-			
-			<div class="col-md-12">
-				<img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/003_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn">
+			<div class="col-md-8 col-md-push-4">
+				<img src="https://daikin-dealer.ru/image/catalog/ftxm20m_rxm20m/003_ftxm20m_rxm20m_.jpg" alt="" class="img-responsive wow fadeIn">
 			</div>
 		</div>
 	</div>
 </div>
-</div>
 
-<div class="adw-block">
+
+
+
+
+<div class="adw-block rel">
 	<div class="container">
-			<div class="row">
-				<div class="col-md-7 wow bounceInLeft"><div class="txt right"><strong>МИНИМАЛЬНЫЙ УЮТ</strong></div></div>
-			</div>
-			<div class="row">
-				<div class="col-md-6 col-md-offset-6  wow bounceInRight"><div class="txt blue-txt"><strong>В ВАШЕМ ДОМЕ</strong></div></div>
+			<div class="down">
+				<div class="row">
+					<div class="col-md-12 wow bounceInLeft"><div class="txt" style="text-align: center;"><strong>Класс энергосбережения</strong></div></div>
+				</div>
+				<div class="row">
+					<div class="col-md-12  wow bounceInRight"><div class="txt blue-txt" style="text-align: center;"><strong style="color: green">А+++</strong></div></div>
+				</div>
 			</div>
 		<div class="row ">
 			<div class="col-md-12">
-				<img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/004_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn">
+				<img src="https://daikin-dealer.ru/image/catalog/ftxm20m_rxm20m/004_ftxm20m_rxm20m_.jpg" alt="" class="img-responsive wow fadeIn">
 			</div>
 		</div>
 	</div>
 </div>
-</div>
 
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
