@@ -28,9 +28,10 @@
 	margin-top: 30px;
 }
 	.triangle{
-		margin-top: 30px;
+		margin-top: 0px;
 		padding-top: 30px;
 		padding-left: 30px;
+		padding-bottom: 30px;
 		background-repeat: no-repeat;
 		background-image: url('data:image/svg+xml;utf8,<svg width="179" height="179" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 179V0H179L0 179Z" fill="%232A9BD6" fill-opacity="0.9"/><path d="M0 51.1429V0H51.1429L0 51.1429Z" fill="%23324E5C"/></svg>');
 	}
@@ -83,101 +84,59 @@
 		font-size: 30px;
 		z-index: 99;
 	}
+	.mb-40{margin-bottom: -40px;}
 	.trr, .trl{
-		transform: translateX(-30%); 
 		z-index: 99; 
 		margin-top: 100px;
 	}
+	.trr{
+		transform: translateX(-30%); 
+		
+	}
+
 	.trl{
 		transform: translateX(30%); 
-	}
-
-	.col-md-12 .trr{
-		transform: translateX(-60%);
-		left: 0; 
-		top: 0;
-		width: 100%;
-		margin-top: 0;
 
 	}
 
-	.col-md-12 .trl{
-		transform: translateX(60%); 
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		margin-top: 0;
+.rel{
+ 	position: relative;
+ }
+ .strikes{
+ 	position: absolute;
+ 	text-align: center;
+ 	color: #fff;
+ 	font-size: 30px;
+ 	left: 0;
+ 	width: 100%;
+ 	z-index: 99;
+ 	bottom: 60px;
+ }
+ .gray{
+ 	background-color: rgba(0,0,0,0.7);
+ 	padding: 15px 0;
+ }
+ .s-blue{
+ 	background-color: rgba(40,155,225,.8);
+ 	padding: 15px 0;
+ }	
 
+	.right{
+		text-align: right;
 	}
-	.col-md-12 .trr.s01{
-		margin-top: 15px;
-	}
-	.col-md-12 .trr.s02{
-		margin-top: 150px;
-	}
-	.col-md-12 .trl.s03{
-		margin-bottom: 15px;
+	.blue-txt{
+		color: #2A9BD6;
 	}
 
 	.adw-block{overflow: hidden;}
 
-
-	.triangle-bg{
-		background-image: url('data:image/svg+xml;utf8,<svg width="179" height="179" preserveAspectRatio="none" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 179V0H179L0 179Z" fill="%232A9BD6" fill-opacity="0.9"/><path d="M0 51.1429V0H51.1429L0 51.1429Z" fill="%23324E5C"/></svg>');
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-		margin: 60px 0;
-		text-align: center;
-
-	}
-	.triangle-bg img{
-		border-radius: 50%;
-		border: 10px solid #fff;
-		display: block;
-		margin: -60px auto;
-	}
-	.triangle-bg span{
-		background-color: rgba(40,155,225,.8);
-		display: block;
-		margin: -120px auto 0;
-		position: relative;
-		z-index: 99;
-		border-radius: 30px;
-		color: #fff;
-		max-width: 600px;
-		padding: 15px;
-	}
-
-	.mtop{
-		transform: translateY(50%);
-		font-weight: 700;
-	}
-
-	.own-bg{
-		background-image: url('https://daikin-dealer.ru/image/catalog/ftxz25n/004_ftxz25n_rxz25n_.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 0;
-		padding: 30%;
-	}
-	.own-bg-item{
-		position: absolute;
-	}
-	.abs-img-block{
-		position: relative;
-		padding: 130px 0;
-		margin-bottom: 90px;
-	}
-	.abs-img{
-		position: absolute;
-		right: 0;
-		top: 0;
-	}
-
-	
-
 		/* media */
 @media (max-width: 992px) {
+.strikes{
+ 	position: static;
+ 	font-size: 20px;
+ 	margin-bottom: 15px;
+ }
 	.triangle .tr{
 		font-size: 40px;
 		}
@@ -185,28 +144,19 @@
 		font-size: 30px;
 		margin-bottom: 20px;
 	}
+	.mb-40{display: none;}
 	.txt{
 		font-size: 20px;
+		text-align: center;
 	}
-	.trr{
+		.right{
+		text-align: center;
+	}
+
+	.trr, .trl{
 		transform: none; 
 		margin-top: 0;
-	}
-	.col-md-12 .trr, .col-md-12 .trl{
-		transform: none; 
-		position: relative;
-		margin: 0;
-		margin-bottom: 10px;
-	}
-	.abs-img-block{
-		position: relative;
-		padding: 0;
-		margin-bottom: 0px;
-	}
-	.abs-img{
-		position: static;
-		right: 0;
-		top: 0;
+		margin-bottom: 15px;
 	}
 
 }
@@ -215,11 +165,9 @@
 
 </style>
 
-
 <p>Серия кондиционеров Daikin FTXZ Ururu Sarara</p>
 
 <div class="row">
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -229,81 +177,67 @@
 </div>
 
 
+
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-5 col-md-push-7 wow bounceInRight" style="z-index: 99;">
-				<div class="txt blue right trr"><div class="white txt">Первый кондиционер<br>для жилых помещений<br>в Европе работающий на R32</div></div>
+			<div class="col-md-4 wow bounceInLeft" style="z-index: 99;">
+				<div class="txt blue left trl "><div class="white txt">DAIKIN STYLISH<br>Новое измерение стиля</div></div>
 			</div>
-			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ftxz25n/001_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/001_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn"></div>
 			
 		</div>
 	</div>
 </div>
-
-<div class="adw-block">
-	<div class="container">
-		<div class="row ">
-			<div class="col-md-12 triangle-bg wow fadeIn" style="z-index: 99;">
-				<img src="https://daikin-dealer.ru/image/catalog/ftxz25n/002_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive wow shake">
-				<span class="txt wow bounceInUp">Распределение потока воздуха определяется формой заслонки</span>
-			</div>
-		</div>
-	</div>
-</div>
-	
-
-
-
-
-<div class="adw-block abs-img-block">
-	<div class="container">
-		<div class="row ">
-			<div class="col-md-4 wow bounceIn"><div class="txt left mtop">НОВАЯ ТЕХНОЛОГИЯ<br>УВЛАЖНЕНИЯ БЕЗ<br>ПОДАЧИ ВОДЫ</div></div>
-		</div>
-		<div class="abs-img"><img src="https://daikin-dealer.ru/image/catalog/ftxz25n/003_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive"></div>
-	</div>
-</div>
-
-
-<div class="adw-block">
-	<div class="container">
-		<div class="row ">
-				<div class="col-md-12">
-					<div class="wow bounceInDown">
-						<div class="txt blue left trr own-bg-item s01"><div class="white txt">URURU<br>Увлажнение зимой</div></div>
-					</div>
-					<div class="wow bounceInLeft">
-						<div class="txt blue left trr own-bg-item s02"><div class="white txt" >SARARA<br>Снижение влажности летом</div></div>
-					</div>
-					<div class="txt blue right trl own-bg-item s03"><div class="white txt" >URURU SARARA<br>Pure comfort</div></div>
-			<div class="own-bg">
-			</div>
-				</div>
-		</div>
-	</div>
-</div>
-
-
 
 
 <div class="adw-block">
 	<div class="container">
 		<div class="row ">
 			<div class="col-md-5 col-md-push-7 wow triangle bounceInRight">
-				<div class="tr">A++<span>идеальный комфорт<br>и энергосбережение</span></div>
+				<div class="tr"><span>ИЗЫСКАННЫЙ</span> ДИЗАЙН</div>
+				
 			</div>
-			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ftxz25n/005_ftxz25n_rxz25n_.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/002_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn"></div>
 		</div>
 	</div>
 </div>
 
 
-
-
-
-
+<div class="adw-block rel">
+	<div class="container">
+		<div class="row ">
+			<div class="strikes">
+				<div class="gray wow bounceInDown">ВЫБОР ЦВЕТА</div>
+				<div class="s-blue wow bounceInUp">ДЛЯ ЛЮБОГО ИНТЕРЬЕРА</div>
+			</div>
+			
+			<div class="col-md-12">
+				<img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/003_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn">
+			</div>
+		</div>
+	</div>
 </div>
+</div>
+
+<div class="adw-block">
+	<div class="container">
+			<div class="row">
+				<div class="col-md-7 wow bounceInLeft"><div class="txt right"><strong>МИНИМАЛЬНЫЙ УЮТ</strong></div></div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-6  wow bounceInRight"><div class="txt blue-txt"><strong>В ВАШЕМ ДОМЕ</strong></div></div>
+			</div>
+		<div class="row ">
+			<div class="col-md-12">
+				<img src="https://daikin-dealer.ru/image/catalog/ftxa20at_rxa20a/004_ftxa20at_rxa20a_.jpg" alt="" class="img-responsive wow fadeIn">
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script>
 	if ($(window).width() > 992){new WOW().init();}
