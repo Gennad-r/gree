@@ -51,9 +51,9 @@
 			position: absolute;	
 			z-index: 99;	
 			left: 30%;
-			bottom: 10%;
+			bottom: -100%;
 			padding: 20px;	
-			width: 100%;	
+			width: 100vw;	
 			background-color: rgba(88, 190, 237, 0.9);
 			text-align: left;
 		}
@@ -65,7 +65,7 @@
 		}
 		.left-side .text-holder{
 			left: auto;
-			right: 40%;
+			right: -40%;
 				
 		}
 		.left-side .white-bold-1_3{text-align: right;}
@@ -134,6 +134,18 @@
 		background-color: #777;
 	}
 
+	.ml-100p{
+		margin-left: -100px;
+	}
+	.ml-100p.sm18{
+		margin-top: 30px;
+	}
+	.sm18{
+		font-size: 18px;
+	}
+	.sm18 strong{
+		color: #59bded
+	}
 
 
 
@@ -162,7 +174,8 @@
 	}
 	.text-holder{
 		position: static;
-		margin-bottom: 20px;	
+		margin-bottom: 20px;
+		width: 100%;
 	}
 	
 	.third-block img{
@@ -191,6 +204,9 @@
 	.m15{
 		padding: 0 15px;
 	}
+	.ml-100p{
+		margin-left: 0;
+	}
 }
 
 
@@ -211,19 +227,23 @@
 <div class="first-block ovh left-side">
 	<div class="container">
 		<div class="row ">
-			<div class="col-md-4 text-holder wow flipInX"><div class="white-bold-1_3">ПОДОЙДЕТ ДЛЯ<br>ЛЮБОГО ИНТЕРЬЕРА</div></div>
-			<div class="col-md-8 col-md-offset-4"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/001.jpg" alt="" class="img-responsive"></div>
+			<div class="col-md-4" style="position: relative;">
+				<div class="txt sm18 wow bounceInDown"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+			<div class="text-holder wow flipInX"><div class="white-bold-1_3">ПОДОЙДЕТ ДЛЯ<br>ЛЮБОГО ИНТЕРЬЕРА</div></div>
+			</div>
+			<div class="col-md-8"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/001.jpg" alt="" class="img-responsive"></div>
 		</div>
 	</div>
 </div>
-
 
 
 <div class="second-block ovh">
 	<div class="container">
 		<div class="row reverse">
 			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/fdq125c-rq125b/002.jpg" alt="" class="img-responsive"></div>
-			<div class="col-md-5"><div class="f100perc dark-blue-bold-1_3 wow flipInY"><small>ВЫСОКАЯ СТЕПЕНЬ</small><br>ЗАЩИТЫ</div></div>
+			<div class="col-md-5"><div class="f100perc dark-blue-bold-1_3 wow flipInY"><small>ВЫСОКАЯ СТЕПЕНЬ</small><br>ЗАЩИТЫ</div>
+			<div class="ml-100p txt sm18 wow bounceInDown"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+		</div>
 		</div>
 	</div>
 </div>
