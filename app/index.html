@@ -19,428 +19,331 @@
 <!-- BEGIN PAGE CODE -->
 	<style>
 /* bootstrap position fixing */
-.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    position: relative;
-  }
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
-.container-fluid {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-@media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
-  .col-md-11 {
-    width: 91.66666667%;
-  }
-  .col-md-10 {
-    width: 83.33333333%;
-  }
-  .col-md-9 {
-    width: 75%;
-  }
-  .col-md-8 {
-    width: 66.66666667%;
-  }
-  .col-md-7 {
-    width: 58.33333333%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-5 {
-    width: 41.66666667%;
-  }
-  .col-md-4 {
-    width: 33.33333333%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-2 {
-    width: 16.66666667%;
-  }
-  .col-md-1 {
-    width: 8.33333333%;
-  }
-  .col-md-pull-12 {
-    right: 100%;
-  }
-  .col-md-pull-11 {
-    right: 91.66666667%;
-  }
-  .col-md-pull-10 {
-    right: 83.33333333%;
-  }
-  .col-md-pull-9 {
-    right: 75%;
-  }
-  .col-md-pull-8 {
-    right: 66.66666667%;
-  }
-  .col-md-pull-7 {
-    right: 58.33333333%;
-  }
-  .col-md-pull-6 {
-    right: 50%;
-  }
-  .col-md-pull-5 {
-    right: 41.66666667%;
-  }
-  .col-md-pull-4 {
-    right: 33.33333333%;
-  }
-  .col-md-pull-3 {
-    right: 25%;
-  }
-  .col-md-pull-2 {
-    right: 16.66666667%;
-  }
-  .col-md-pull-1 {
-    right: 8.33333333%;
-  }
-  .col-md-pull-0 {
-    right: auto;
-  }
-  .col-md-push-12 {
-    left: 100%;
-  }
-  .col-md-push-11 {
-    left: 91.66666667%;
-  }
-  .col-md-push-10 {
-    left: 83.33333333%;
-  }
-  .col-md-push-9 {
-    left: 75%;
-  }
-  .col-md-push-8 {
-    left: 66.66666667%;
-  }
-  .col-md-push-7 {
-    left: 58.33333333%;
-  }
-  .col-md-push-6 {
-    left: 50%;
-  }
-  .col-md-push-5 {
-    left: 41.66666667%;
-  }
-  .col-md-push-4 {
-    left: 33.33333333%;
-  }
-  .col-md-push-3 {
-    left: 25%;
-  }
-  .col-md-push-2 {
-    left: 16.66666667%;
-  }
-  .col-md-push-1 {
-    left: 8.33333333%;
-  }
-  .col-md-push-0 {
-    left: auto;
-  }
-  .col-md-offset-12 {
-    margin-left: 100%;
-  }
-  .col-md-offset-11 {
-    margin-left: 91.66666667%;
-  }
-  .col-md-offset-10 {
-    margin-left: 83.33333333%;
-  }
-  .col-md-offset-9 {
-    margin-left: 75%;
-  }
-  .col-md-offset-8 {
-    margin-left: 66.66666667%;
-  }
-  .col-md-offset-7 {
-    margin-left: 58.33333333%;
-  }
-  .col-md-offset-6 {
-    margin-left: 50%;
-  }
-  .col-md-offset-5 {
-    margin-left: 41.66666667%;
-  }
-  .col-md-offset-4 {
-    margin-left: 33.33333333%;
-  }
-  .col-md-offset-3 {
-    margin-left: 25%;
-  }
-  .col-md-offset-2 {
-    margin-left: 16.66666667%;
-  }
-  .col-md-offset-1 {
-    margin-left: 8.33333333%;
-  }
-  .col-md-offset-0 {
-    margin-left: 0%;
-  }
-}
-
-.container:before,
-.container:after,
-.container-fluid:before,
-.container-fluid:after,
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-.container:after,
-.container-fluid:after,
-.row:after {
-  clear: both;
-}
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{position: relative;} 
 /* linespace fixing */
-.txt, span, .sm18, .tr, .temp{ line-height: 1.2; }
+.txt, span, .tr, .sm18{ line-height: 1.2; }
 /* end fixing block */
-			overflow: hidden;
-		}
-		.relative{
-			position: relative;
-		}
-		.first-block{
-			position: relative;	
-			padding-top: 30px;	
-		}
-		.fourth-block .triangle {width: 200px;}
-		.blue-bold-1_3, .white-bold-1_3, .dark-blue-bold-1_3{
-			color: #59bded;	
-			text-align: center;	
-			font-size: 30px;	
-			font-weight: 700;	
-			line-height: 1.2;	
-		}
-		.white-bold-1_3{
-			color: #fff;
-			text-align: left;	
-		}
-		.dark-blue-bold-1_3{
-			color: #324e5c;
-			text-align: left;
-		}
-		.text-holder{
-			position: absolute;	
-			z-index: 99;	
-			left: 30%;
-			bottom: 10%;
-			padding: 20px;	
-			width: 100%;	
-			background-color: rgba(88, 190, 237, 0.9);
-			text-align: left;
-		}
-		.second-block{
-			margin: 30px 0 0;	
-		}
-		.third-block, .fourth-block{
-			position: relative;	
-		}
-		.left-side .text-holder{
-			left: auto;
-			right: 40%;
-				
-		}
-		.left-side .white-bold-1_3{text-align: right;}
-		.fourth-block{margin-top: 30px; overflow: hidden;	}
-		.fourth-block .dark-blue-bold-1_3:first-child{
-			margin-bottom: 60px;
-		}
-		.fourth-block .dark-blue-bold-1_3:last-child{
-			font-weight: 200;
-		}
-		.fourth-block .dark-blue-bold-1_3:last-child span{
-			font-size: 80px;
-			color: green;
-			line-height: 60px	;
-		}
-		
-	
-	.third-block .white-bold-1_3{
-		background-color: rgba(88, 190, 237, 0.9);
-		padding: 20px;
-		width: 300px;
-		height: 300px;
-		border-radius: 50%;
-		text-align: center;
-		padding-top: 80px;
-		position: relative;
-		top: 50%;
-		margin: 0 auto;
-		margin-top: 25%;
-
-	}
-	.third-block .white-bold-1_3 span{
-		font-size: 50px;
+.description-text{
+	margin-top: 15px;
+}
+.description-text strong{
+	color: rgb(40,155,225)
+}
+.minus-right-1{
+	margin-right: -8.333333%;
+}
+.minus-right-2{
+	margin-right: -16.666666%;
+}
+.minus-left-1{
+	margin-left: -8.333333%;
+}
+.minus-left-2{
+	margin-left: -16.666666%;
+}
+.minus-right-2 .description-text{
+	padding-right: 185px;
+}
+.minus-left-2 .description-text{
+	padding-left: 185px;
+}
+.txt.blue{
+	margin-top: 90px;
+}
+.minus-right-3{
+	margin-right: -25%;
+}
+	small{
 		font-weight: 200;
 	}
-	.second-block .white-bold-1_3 span{
-		font-size: 120px;
-	}
-	.f100perc{
-		background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61.68 55.2"><title>Daikin</title><polygon points="0 55.2 0 0 61.68 0 0 55.2" fill="%2359bded"/><polygon points="0 15.72 0 0 17.57 0 0 15.72" fill="%23324e5c"/></svg>');
+	.center{
+	text-align: center;
+}
+.adw-block{
+	margin-top: 30px;
+}
+	.triangle{
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-left: 30px;
 		background-repeat: no-repeat;
-		padding: 20px 0 0 20px;
+		background-image: url('data:image/svg+xml;utf8,<svg width="179" height="179" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 179V0H179L0 179Z" fill="%232A9BD6" fill-opacity="0.9"/><path d="M0 51.1429V0H51.1429L0 51.1429Z" fill="%23324E5C"/></svg>');
+	}
+	.triangle .tr{
+		font-size: 40px;
+	}
+	.triangle .tr span {
+		font-size: 60px;
+		display: inline-block;
+	}
+	.triangle .txt {
+		font-size: 18px;
+	}
+	.col-md-5.wow .txt strong{
+		color: #2A9BD6;
+		display: inline-block;
+	}
+	.left{
+		position: relative;
+		z-index: 10;
+		text-align: right;
+		padding: 15px 20px 15px 0;
+	}
+	.right{
+		position: relative;
+		padding: 15px 0 15px 20px;
 		text-align: left;
-
 	}
-	.f100perc span{
-		font-size: 80px;
-		font-weight: 200;
+	.right.blue:before{
+		right: auto;
+		left: 0;
 	}
-	.third-block, .fourth-block, .second-block, .first-block, .f-01-block{
-		margin: 60px 0 0;
+	.blue:before{
+		background-color: rgba(40,155,225,.8);
+		content: "";
+		position: absolute;
+		display: block;
+		width: 100vw;
+		right: 0;
+		top: 0;
+		height: 100%;
+		z-index: 0;
 	}
 	
+	.white{
+		color: #fff;
+		position: relative;
+	}
+	.txt{
+		font-size: 30px;
+		z-index: 99;
+	}
+	.trr, .trl{
+		transform: translateX(-30%); 
+		z-index: 99; 
+		margin-top: 100px;
+	}
+	.trl{
+		transform: translateX(30%); 
+	}
+	.col-md-12 .trr{
+		transform: translateX(-60%);
+		left: 0; 
+		top: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-md-12 .trl{
+		transform: translateX(60%); 
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		margin-top: 0;
+	}
+	.col-md-12 .trr.s01{
+		margin-top: 15px;
+	}
+	.col-md-12 .trr.s02{
+		margin-top: 150px;
+	}
+	.col-md-12 .trl.s03{
+		margin-bottom: 15px;
+	}
+	.adw-block{overflow: hidden;}
+	.triangle-bg{
+		background-image: url('data:image/svg+xml;utf8,<svg width="179" height="179" preserveAspectRatio="none" viewBox="0 0 179 179" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 179V0H179L0 179Z" fill="%232A9BD6" fill-opacity="0.9"/><path d="M0 51.1429V0H51.1429L0 51.1429Z" fill="%23324E5C"/></svg>');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+		margin: 60px 0;
+		text-align: center;
+	}
+	.triangle-bg img{
+		border-radius: 50%;
+		border: 10px solid #fff;
+		display: block;
+		margin: -60px auto;
+	}
+	.triangle-bg span{
+		background-color: rgba(40,155,225,.8);
+		display: block;
+		margin: -120px auto 0;
+		position: relative;
+		z-index: 99;
+		border-radius: 30px;
+		color: #fff;
+		max-width: 600px;
+		padding: 15px;
+	}
+	.mtop{
+		margin-top: 30px;
+	}
+	.own-bg{
+		background-image: url('https://daikin-dealer.ru/image/catalog/ftxz25n/004_ftxz25n_rxz25n_.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 0;
+		padding: 30%;
+	}
+	.own-bg-item{
+		position: absolute;
+	}
+	.abs-img-block{
+		position: relative;
+		padding: 130px 0;
+		margin-bottom: 90px;
+	}
+	.abs-img{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.sm18{
+		font-size: 18px;
+	}
 		/* media */
 @media (max-width: 992px) {
-	.f100perc{
-		margin-top: 30px;
+	.minus-right-1{
+	margin-right: 0;
+}
+.minus-right-2{
+	margin-right: 0;
+}
+.minus-left-1{
+	margin-left: 0;
+}
+.minus-left-2{
+	margin-left: 0;
+}
+.minus-right-2 .description-text{
+	padding-right: 0;
+}
+.minus-left-2 .description-text{
+	padding-left: 0;
+}
+
+.txt.blue{
+	margin-top: 15px;
+}
+	.triangle .tr{
+		font-size: 30px;
+		}
+	.triangle .tr span {
+		font-size: 40px;
+		margin-bottom: 20px;
 	}
-	.second-block .white-bold-1_3{
-		margin: 0 auto;
+	.txt{
+		font-size: 20px;
 	}
-	.text-holder{
+	.trr{
+		transform: none; 
+		margin-top: 0;
+	}
+	.col-md-12 .trr, .col-md-12 .trl{
+		transform: none; 
+		position: relative;
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	.abs-img-block{
+		position: relative;
+		padding: 0;
+		margin-bottom: 0px;
+	}
+	.abs-img{
 		position: static;
-		margin-bottom: 20px;	
-	}
-	.third-block .white-bold-1_3{
-		margin-bottom: 30px;
-		margin-top: 30px;
-
-	}
-	.reverse{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		-webkit-flex-direction: column-reverse;
-		-moz-flex-direction: column-reverse;
-		-ms-flex-direction: column-reverse;
-		-o-flex-direction: column-reverse;
-		flex-direction: column-reverse;
-
+		right: 0;
+		top: 0;
 	}
 }
 </style>
+
 <p>Серия кондиционеров Daikin FTXZ Ururu Sarara</p>
 
-<div class="container">
 <div class="row">
-<div class="col-md-12">
-<p>Новый кондиционер Daikin FTXZ Ururu Sarara &mdash; это обновленная серия с новейшими функциями и усовершенствованным дизайном внутреннего блока. Кондиционер работает на новом фреоне R32, который имеет лучшую энергоэффективность среди конкурентов и экономит электроэнергию. Новые функции кондиционера: Автоматическая очистка фильтров (в кондиционере установлен отсек, куда собираются все загрязнения) Трехзонный датчик движения &laquo;Умный глаз&raquo; Новый дизайн внутреннего блока и новый экономичный фреон Переработанный пульт управления с ночной подсветкой Кондиционер Daikin FTXZ имеет лучший показатель энергоэффетивности A+++ &mdash; такой классификации еще нет в стандартах Евросоюза, но &laquo;Дайкин&raquo; уже сейчас вводит данный стандарт, так как кондиционер имеет феноменальные показатели по экономичности. Это лучший класс и самая высокая экономия электроэенeргии среди всех конкурентов.</p>
-</div>
-</div>
-</div>
-
-<div class="first-block ovh" style="position: relative;">
 <div class="container">
-<div class="row ">
-<div class="col-md-4 text-holder wow flipInX">
-<div class="white-bold-1_3">ПОМЕЩЕНИЙ МНОГО &ndash; СИСТЕМА ОДНА</div>
+	<div class="row">
+		<div class="col-md-12">
+			<p>Новый кондиционер Daikin FTXZ Ururu Sarara — это обновленная серия с новейшими функциями и усовершенствованным дизайном внутреннего блока. Кондиционер работает на новом фреоне R32, который имеет лучшую энергоэффективность среди конкурентов и экономит электроэнергию. Новые функции кондиционера: Автоматическая очистка фильтров (в кондиционере установлен отсек, куда собираются все загрязнения) Трехзонный датчик движения «Умный глаз» Новый дизайн внутреннего блока и новый экономичный фреон Переработанный пульт управления с ночной подсветкой Кондиционер Daikin FTXZ имеет лучший показатель энергоэффетивности A+++ — такой классификации еще нет в стандартах Евросоюза, но «Дайкин» уже сейчас вводит данный стандарт, так как кондиционер имеет феноменальные показатели по экономичности. Это лучший класс и самая высокая экономия электроэенeргии среди всех конкурентов. </p>
+		</div>
+	</div>
 </div>
 
-<div class="col-md-8"><img alt="" class="img-responsive" src="https://daikin-dealer.ru/image/catalog/rxyq10t/001.jpg" /></div>
-</div>
-</div>
+
+
+
+
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-7 col-md-push-7 minus-left-2 wow bounceInRight" style="z-index: 99;">
+				<div class="txt blue right" style="text-align: left;"><div class="white txt">ПОМЕЩЕНИЙ МНОГО &ndash; СИСТЕМА ОДНА</div></div>
+				<div class="description-text txt sm18"><strong>Автоматическое переключение</strong> охлаждения/нагрева автоматического режима охлаждения/нагрева для заданной температуры (только в с тепловым насосом).</div>
+			</div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/rxyq10t/001.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
+		</div>
+	</div>
 </div>
 
-<div class="second-block ovh">
-<div class="container">
-<div class="row">
-<div class="col-md-4">
-<div class="f100perc dark-blue-bold-1_3 wow flipInY"><span>100%</span><br />
-КОНТРОЛЬ<br />
-КАЧЕСТВА<br />
-НА ЗАВОДЕ</div>
+
+
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-5 wow triangle bounceInLeft">
+				<div class="tr"><span>100%</span><br />КОНТРОЛЬ<br />КАЧЕСТВА<br />НА ЗАВОДЕ</div>
+				<div class="description-text txt sm18 wow bounceInUp"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+
+			</div>
+			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/rxyq10t/002.jpg" alt="" class="img-responsive wow fadeIn"></div>
+		</div>
+	</div>
 </div>
 
-<div class="col-md-8"><img alt="" class="img-responsive" src="https://daikin-dealer.ru/image/catalog/rxyq10t/002.jpg" /></div>
-</div>
-</div>
+
+
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-7 col-md-push-7 minus-left-2 wow bounceInRight" style="z-index: 99;">
+				<div class="txt blue right" style="text-align: left;"><div class="white txt">ВЫСШИЙ КОМФОРТ И УДОБСТВО</div></div>
+				<div class="description-text txt sm18"><strong>Автоматическое переключение</strong> охлаждения/нагрева автоматического режима охлаждения/нагрева для заданной температуры (только в с тепловым насосом).</div>
+			</div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/rxyq10t/003.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
+		</div>
+	</div>
 </div>
 
-<div class="third-block ovh">
-<div class="container">
-<div class="row reverse">
-<div class="col-md-8"><img alt="" class="img-responsive" src="https://daikin-dealer.ru/image/catalog/rxyq10t/003.jpg" /></div>
-
-<div class="col-md-4 wow flipInX">
-<div class="white-bold-1_3">ВЫСШИЙ<br />
-<span>КОМФОРТ</span><br />
-И УДОБСТВО</div>
-</div>
-</div>
-</div>
-</div>
-
-<div class="f-01-block ovh relative left-side">
-<div class="text-holder wow fadeInLeft">
-<div class="white-bold-1_3">ПРОСТОТА МОНТАЖА<br />
-И ОБСЛУЖИВАНИЯ</div>
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-7 minus-right-2 wow bounceInLeft" style="z-index: 99;">
+				<div class="txt blue left" style="text-align: left;"><div class="white txt">ПРОСТОТА МОНТАЖА И ОБСЛУЖИВАНИЯ</div></div>
+				<div class="description-text txt sm18"><strong>Автоматическое переключение</strong> охлаждения/нагрева автоматического режима охлаждения/нагрева для заданной температуры (только в с тепловым насосом).</div>
+			</div>
+			<div class="col-md-7"><img src="https://daikin-dealer.ru/image/catalog/rxyq10t/004.jpg" alt="" class="img-responsive wow fadeIn"></div>
+			
+		</div>
+	</div>
 </div>
 
-<div class="container">
-<div class="row">
-<div class="col-md-8 col-md-offset-4"><img alt="" class="img-responsive" src="https://daikin-dealer.ru/image/catalog/rxyq10t/004.jpg" /></div>
-</div>
-</div>
+<div class="adw-block">
+	<div class="container">
+		<div class="row ">
+			<div class="col-md-5 col-md-push-7 wow triangle bounceInRight">
+				<div class="tr">ВОЗМОЖНОСТЬ СКРЫТОГО МОНТАЖА</div>
+				<div class="description-text txt sm18 wow bounceInUp"><strong>Автоматическое переключение режимов</strong> охлаждения/нагрева автоматический выбор режима охлаждения/нагрева для поддержания заданной температуры (только в моделях с тепловым насосом).</div>
+
+			</div>
+			<div class="col-md-7 col-md-pull-5"><img src="https://daikin-dealer.ru/image/catalog/rxyq10t/005.jpg" alt="" class="img-responsive wow fadeIn"></div>
+		</div>
+	</div>
 </div>
 
-<div class="fourth-block ovh">
-<div class="container">
-<div class="row reverse">
-<div class="col-md-6"><img alt="" class="img-responsive" src="https://daikin-dealer.ru/image/catalog/rxyq10t/005.jpg" /></div>
 
-<div class="col-md-6 wow flipInY">
-<div class="dark-blue-bold-1_3 f100perc">ВОЗМОЖНОСТЬ<br />
-СКРЫТОГО<br />
-МОНТАЖА</div>
-</div>
-</div>
-</div>
+
+
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script><script>
 	if ($(window).width() > 992){new WOW().init();}
